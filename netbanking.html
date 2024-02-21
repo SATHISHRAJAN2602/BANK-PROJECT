@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Cadbury Bank</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto" id="po">
+        <li class="nav-item" style="margin-left:50%; padding-left:10px;">
+          <a class="nav-link" href="javascript:void(0)">Home</a>
+        </li>
+        <li class="nav-item" style="margin-left:100%; padding-left:10px;">
+          <a class="nav-link" href="javascript:void(0)">About</a>
+        </li>
+        <li class="nav-item" style="margin-left:100%; padding-left:10px;">
+          <a class="nav-link" href="javascript:void(0)">Link</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> 
+<br>
+<br><br>
+     
+     <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Transfer
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div class="row">
+                
+                    <div class="col-sm-8">
+                        <p style="text-align: center;border: 5px solid orangered; border-radius: 50%; padding:20px; color: white; background-color:rgb(34, 32, 32);">Last Transactions</p>
+                        <table class="table">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th scope="col" style="width:150px;">Account No</th>
+                                <th scope="col" style="width:150px">Name</th>
+                                <th scope="col" style="width:100px">IFSC code</th>
+                                <th scope="col" style="width:100px">Transfer Amount</th>
+                                <th scope="col">Time</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td scope="row">9087656321</td>
+                                <td>Strene privated Limited</td>
+                                <td>133444667770</td>
+                                <td>1,00,000</td>
+                                <td>Few Hours ago</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">79077460002</td>
+                                <td>Kaashiv InfoTech</td>
+                                <td>9887766620088</td>
+                                <td>20,000</td>
+                                <td>12.09.2022</td>
+                              </tr>
+                              <tr>
+                                <td scope="row">98903983891</td>
+                                <td>Agotech India</td>
+                                <td>887773444321</td>
+                                <td>40,000</td>
+                                <td>10.09.2022</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    <div class="col-sm-4">
+                        
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div  style="border:2px solid black">
+                        <p style="color:white; background-color: rgb(24, 23, 23);border: 5px solid orangered;">Bank Details</p>
+                        <pre>Account NO:          556786543232</pre>
+                        <pre>      Name:          PinkyFoxTraders</pre>
+                        <pre> IFSC Code:          99087798987</pre>
+                        <pre>      Bank:    ICICI Bank Limited
+                        </pre>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                  <div class="row">
+                    <div class="col-xs-6" style="border:3px solid black">
+                     <p style="text-align: center;">Payment Information</p>
+                     <form action="">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="exampleFormControlSelect1">Select a Bank</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>KVB</option>
+                              <option>HDFC</option>
+                              <option>ICICI</option>
+                              <option>PNB</option>
+                              <option>others</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="company name">Benificiary name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex---srishark" width="300px">
+                          </div>
+                          <div class="form-group">
+                            <label for="company name">Account Number</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex:----09049095" width="300px">
+                          </div>
+                          <div class="form-group">
+                            <label for="company name">IFSC Code</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex:----1212231223" width="300px">
+                          </div>
+                     </form>
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                       I have read the disclaimer and i agreee to <a href="#">Terms and Coditions</a>
+                     </label>
+                     <form>
+                        <label class="radio-inline">
+                            <br>
+                            <p>Payment Mode</p>
+                          <input type="radio" name="optradio" checked>Net Banking
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">   RTGS/NEFT
+                        </label>
+                        <br>
+                        <button style="text-align: center; margin-left: 50%;" class="btn-primary">Proceed</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <div class="col-md-4">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Add a Company
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="width:600px; margin-top:10px;">
+                  <form class="form-inline" >
+                    <div class="form-group">
+                      <label for="email">Company name</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Account Number</label>
+                      <input type="text" class="form-control" id="pwd" placeholder="ex:---23432121">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">IFSC Code</label>
+                      <input type="text" class="form-control" id="pwd" placeholder="ex:---90023432121">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Beneficiary Name</label>
+                      <input type="text" class="form-control" id="pwd" placeholder="ex:----karur bytes">
+                    </div>
+                    <div class="checkbox" style="text-align: center;">
+                      <label><input type="checkbox"> I accept Terms & Coditions</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                      <label class="form-check-label">Net Banking</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                      <label class="form-check-label">NEFT/RTGS</label>
+                    </div>
+                    <br>
+                    <div style="text-align:center;">
+                    <button type="submit" class="btn btn-dark">Add</button>
+                    </div>
+                  </form>
+
+                </ul>
+              </div>
+        </div>
+              <div class="col-md-4">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Check balance
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              </div>
+        </div>
+    </div>
+    </body>
+</html>
